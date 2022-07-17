@@ -1,9 +1,12 @@
 #include <iostream>
 #include <vector>
+#include <memory>
 
 using namespace std;
 
 int minimumRefill(vector<int>& plants, int capacityA, int capacityB) {
+    shared_ptr<int> p=make_shared<int>(23);
+    
     int res=0;
     int size=plants.size();
     int i=0,j=size-1;
