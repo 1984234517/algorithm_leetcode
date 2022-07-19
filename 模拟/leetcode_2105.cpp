@@ -6,6 +6,7 @@ using namespace std;
 
 int minimumRefill(vector<int>& plants, int capacityA, int capacityB) {
     shared_ptr<int> p=make_shared<int>(23);
+    p.use_count()
     
     int res=0;
     int size=plants.size();
