@@ -22,7 +22,7 @@ int quickSort(vector<int>& nums,int l,int r){
 
 void sortQuick(vector<int>& nums,int l,int r){
     if(l>=r)
-        return ;
+        return ; 
     int index = quickSort(nums,l,r);
     sortQuick(nums,l,index-1);
     sortQuick(nums,index+1,r);
