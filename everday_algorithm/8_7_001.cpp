@@ -44,7 +44,10 @@ int main(){
         cin>>res;
         nums[i]=ct(res);
     }
-    sort(nums.begin(),nums.end(),my);
+    sort(nums.begin(),nums.end(),[](vector<int>& v1,vector<int>& v2)->bool{
+    if(v1[0]==v2[0])
+        return v1[1]<v2[1];
+    return v1[0]<v2[0]; });
     long long res = 100000000000;
     int temp=0;
     for(int i=0;i<n-1;i++){
